@@ -62,6 +62,9 @@ def enableUARTRead(bleAddress):
 		child.expect(">")
 
 		#Enable notifications
+		#0x0012 is the handler for the 00002902-0000-1000-8000-00805f9b34fb characteristic
+		#Use char-desc command to read the proper handler of the UUID
+		#01 is the value to enable the notification
 		child.sendline("char-write-req 0x0012 01")
 		#Disable notifications
 		#child.sendline("char-write-req 0x0012 00")
