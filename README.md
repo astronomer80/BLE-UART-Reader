@@ -3,12 +3,12 @@ Simple python script to read BLE values.
 
 Usage: python primo_ble_readuart.py E8:EC:B8:30:AB:B4
 Where E8:EC:B8:30:AB:B4 is the BLE address of your device. Use the commando sudo hcitool lescan to read values from the Arduino Primo. 
-Use the example File-Example-BLE-serial
-and the funcion spam()
-(Uncomment it at the row 44)
-  //forward();
-  // loopback();
-   spam();
+Use the example File-Example-BLE-serial<br>
+and the funcion spam()<br>
+(Uncomment it at the row 44)<br>
+  //forward();<br>
+  // loopback();<br>
+   spam();<br>
 
 You will see:<br>
 angelo@angelo-X550LD:~/Dropbox/Primo/ArduinoTestBenchPrimo$ python primo_ble_readuart.py E8:EC:B8:30:AB:B4<br>
